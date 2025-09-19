@@ -1,0 +1,24 @@
+pure_pursuit_controller_cpp:
+  ros__parameters:
+    base_speed: 0.18              # Slower for sharp turns
+    lookahead_distance: 0.35      # Smaller lookahead for tighter tracking
+    min_lookahead: 0.25          # Even smaller minimum
+    max_lookahead: 0.6           # Reduced maximum
+    goal_tolerance: 0.12         # Tighter goal tolerance
+    control_frequency: 25.0      # Higher frequency for responsive turns
+    max_angular_vel: 1.5         # Higher angular velocity for turns
+    sharp_turn_threshold: 1.2    # Curvature threshold for sharp turn detection
+
+path_smoother_cpp:
+  ros__parameters:
+    num_samples: 250             # More samples for denser path
+
+trajectory_generator_cpp:
+  ros__parameters:
+    v_max: 0.2                   # Lower max velocity for control
+    a_max: 0.4                   # Moderate acceleration
+    dt: 0.08                     # Smaller time steps
+
+waypoint_publisher_cpp:
+  ros__parameters:
+    path_type: "turns"

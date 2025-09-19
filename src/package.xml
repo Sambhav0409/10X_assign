@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>turtlebot3_path_follow_cpp</name>
+  <version>0.1.0</version>
+  <description>Path smoothing, trajectory generation, and pure pursuit controller for TurtleBot3 (C++ ROS2 Humble)</description>
+  <maintainer email="you@example.com">Your Name</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>geometry_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>std_msgs</depend>
+  <depend>turtlebot3_gazebo</depend>
+  <depend>tf2_ros</depend>
+  <depend>tf2_bullet</depend>
+  <build_depend>visualization_msgs</build_depend>
+  <exec_depend>visualization_msgs</exec_depend>
+  
+
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
